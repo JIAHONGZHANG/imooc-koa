@@ -1,9 +1,7 @@
-function a(ctx){
+const a = (ctx) => {
 	ctx.body = {
 		message: 'Hello from a'
 	}
 }
 
-module.exports = {
-	a
-}
+export { a }
