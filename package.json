@@ -5,13 +5,14 @@
   "license": "MIT",
   "scripts": {
     "start": "nodemon --exec babel-node ./src/index.js",
-    "build": "webpack"
+    "build": "cross-env NODE_ENV=prod webpack --config ./config/webpack.config.prod.js"
   },
   "dependencies": {
     "@koa/cors": "^3.1.0",
     "koa": "^2.13.1",
     "koa-body": "^4.2.0",
     "koa-combine-routers": "^4.0.2",
+    "koa-compose": "^4.1.0",
     "koa-helmet": "^6.1.0",
     "koa-router": "^10.0.0"
   },
@@ -25,6 +26,7 @@
     "nodemon": "^2.0.12",
     "webpack": "^5.50.0",
     "webpack-cli": "^4.8.0",
+    "webpack-merge": "^5.8.0",
     "webpack-node-externals": "^3.0.0"
   }
 }
