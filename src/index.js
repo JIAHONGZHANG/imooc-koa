@@ -1,11 +1,11 @@
-import koa from 'koa';
+import Koa from 'koa';
 import koaBody from 'koa-body';
 import cors from '@koa/cors';
 import helmet from 'koa-helmet';
 import routers from './routes/routes';
 import compose from 'koa-compose';
 
-const app = new koa();
+const app = new Koa();
 
 const middlewares = compose([koaBody(), cors(), helmet()]);
 

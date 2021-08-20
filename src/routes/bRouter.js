@@ -1,8 +1,8 @@
-import Router from 'koa-router'
-import { b } from '../api/b'
+import Router from 'koa-router';
+import { b } from '../api/b';
 
-const router = new Router()
+const router = new Router();
 
-router.get('/b', b)
+router.get('/b', b);
 
-export default router
+export default router;

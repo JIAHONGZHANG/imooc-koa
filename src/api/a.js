@@ -1,7 +1,7 @@
 const a = (ctx) => {
-	ctx.body = {
-		message: 'Hello from a'
-	}
-}
+  ctx.body = {
+    message: 'Hello from a',
+  };
+};
 
-export { a }
+export { a };
